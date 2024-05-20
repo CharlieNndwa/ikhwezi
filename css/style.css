@@ -1,0 +1,694 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+:root {
+  --bg-primary: teal;
+  --color-primary: #0e1a60;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-size: 15px;
+}
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+h2 {
+  font-size: 44px;
+  margin-bottom: 15px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+section,
+.container {
+  position: relative;
+}
+.lead {
+  font-weight: 500;
+}
+
+.logos {
+  display: flex;
+  align-items: center; /* Center logo vertically within navbar */
+}
+
+.logos img {
+  width: auto; /* Allow logo to scale based on content */
+  height: 50px; /* Set a fixed height for the logo */
+  margin: 0 1rem; /* Adjust margins as needed */
+}
+
+/*Header*/
+
+header {
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+header .navbar-expand-lg .navbar-nav .nav-link {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 24px;
+}
+
+header .navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: #866909;
+  cursor: pointer;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #000000;
+}
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #000000;
+}
+
+/*Hero Banner*/
+
+.hero-banner {
+  background: url("../images/IMG-20240430-WA0004.jpg") no-repeat;
+  background-size: cover;
+  padding: 200px 0px;
+  min-height: 500px;
+  position: relative;
+}
+.hero-banner:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(5, 77, 111, 0.91);
+}
+.banner-text-wrap h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.btn {
+  padding: 8px 24px;
+  border-radius: 0px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.btn-white {
+  background: #fff;
+  color: var(--color-primary);
+}
+.banner-text-wrap {
+  max-width: 600px;
+}
+
+.banner-text-wrap p {
+  margin-bottom: 23px;
+  margin-top: 15px;
+}
+
+/*Features Section*/
+section.features-section {
+  margin-top: -90px;
+}
+.bg1 {
+  background: #10285f;
+}
+
+.bg2 {
+  background: #0c2f7d;
+}
+
+.bg3 {
+  background: #1148c3;
+}
+
+.features-box h3,
+.features-box p {
+  color: #fff;
+}
+
+.features-box {
+  padding: 40px;
+}
+
+/*About Section*/
+
+section.about-section {
+  padding: 100px 0px;
+}
+
+.btn-primary {
+  background-color: var(--bg-primary);
+  border-color: var(--bg-primary);
+}
+.about-media {
+  border: 10px solid var(--color-primary);
+}
+
+/*Services Section*/
+
+.section-title {
+  margin-bottom: 60px;
+}
+
+section.services-section {
+  padding: 100px 0px 50px;
+  background: #efefef;
+}
+
+.services-box {
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.services-box h3 {
+  margin: 15px 0px 20px;
+}
+
+/*reviews Section*/
+
+.reviews-section {
+  background: url("../images/ikwezi.jpg") no-repeat;
+  background-size: cover;
+  object-fit: contain;
+}
+.review-media {
+  width: 100%;
+}
+
+.review-media img {
+  width: 100px !important;
+  border-radius: 50% !important;
+  display: inline-block !important;
+}
+.bg-overlay:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.reviews-section {
+  padding: 100px 0px;
+}
+
+.reviews-section h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.review-box {
+  color: #fff;
+  text-align: center;
+  max-width: 700px;
+  margin: 0px auto;
+}
+
+.review-box p {
+  font-size: 18px;
+  margin: 26px 0px 26px;
+}
+
+.review-box h4 {
+  text-transform: uppercase;
+}
+
+.review-box h5 {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/*team Section*/
+
+section.team-section {
+  padding: 100px 0px;
+}
+
+.team-box {
+}
+
+.team-info {
+  text-align: center;
+}
+
+.team-info h3 {
+  margin-top: 26px;
+  margin-bottom: 0;
+}
+
+ul.team-social li {
+  display: inline-block;
+}
+
+ul.team-social li a {
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--color-primary);
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+  color: var(--color-primary);
+}
+
+/*Booking Section*/
+
+.booking-section {
+  background: url("../images/IMG-20240430-WA0004.jpg") no-repeat;
+  background-size: cover;
+  padding: 100px 0px;
+}
+.form-control {
+  border-radius: 0;
+  height: 60px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+textarea {
+  height: 224px !important;
+}
+
+.form-col h4 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.form-col h3 {
+  font-size: 36px;
+  color: #fff;
+  margin: 7px 0px 50px;
+}
+
+.form-col p {
+  font-size: 36px;
+  color: #fff;
+  margin: 7px 0px 50px;
+}
+
+/*Blog Section*/
+
+section.blog-section {
+  padding: 100px 0px;
+}
+
+.blog-info h3 a {
+  color: #000;
+}
+
+ul.meta li {
+  display: inline-block;
+}
+
+.blog-info p {
+  margin-top: 20px;
+}
+
+.blog-media {
+  margin-bottom: 17px;
+}
+
+.blog-box {
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.11);
+}
+
+/*Footer */
+
+footer {
+  background: var(--bg-primary);
+  padding: 100px 0px;
+  color: #fff;
+}
+
+ul.footer-address li i {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  font-size: 22px;
+}
+
+ul.footer-address li {
+  position: relative;
+  padding-left: 35px;
+}
+
+ul.footer-address li a {
+  color: #fff;
+}
+
+.footer-widget h3 {
+  margin-bottom: 30px;
+}
+
+ul.footer-menu li a {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+/*Responsive css*/
+
+@media (min-width: 992px) and (max-width: 1400px) {
+  header .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 11px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-toggler-icon {
+    background: #fff;
+    padding: 20px;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .reviews-section {
+    padding: 40px 0px;
+  }
+
+  .section-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .review-box p {
+    font-size: 15px;
+  }
+
+  .banner-text-wrap h1 {
+    font-size: 39px;
+  }
+  .team-box {
+    margin-bottom: 40px;
+  }
+  .hero-banner {
+    padding: 137px 0px;
+    min-height: auto;
+  }
+
+  .booking-section {
+    padding: 40px 0px;
+  }
+
+  footer {
+    padding: 40px 10px;
+  }
+
+  section.blog-section {
+    padding: 40px 0px;
+  }
+
+  section.team-section {
+    padding: 30px 0px;
+  }
+
+  section.services-section {
+    padding: 30px 0px;
+  }
+
+  .services-box {
+    margin-bottom: 20px;
+  }
+
+  .about-media {
+    margin-bottom: 30px;
+  }
+
+  .features-box {
+    margin-bottom: 30px;
+  }
+
+  section.about-section {
+    padding: 30px 0px 40px;
+  }
+}
+
+/* banner */
+
+.banner {
+  background-color: teal; /* Teal green background */
+  display: flex; /* Center content horizontally */
+  justify-content: center; /* Horizontally center icons and text */
+  padding: 1rem; /* Add some padding for better spacing */
+}
+
+.banner-content {
+  text-align: center; /* Center text vertically */
+}
+
+.banner__icon {
+  display: inline-block; /* Allow icons to stay next to text */
+  margin-right: 1rem; /* Space between icon and text */
+  font-size: 1.2rem; /* Adjust icon size as needed */
+  color: white; /* White icons for visibility */
+}
+
+.banner__text {
+  display: flex; /* Make text elements behave like a row */
+  flex-wrap: wrap; /* Wrap text to next line on mobile */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Vertically center text elements */
+}
+
+.banner__text span {
+  margin-right: 2rem; /* More spacing between text elements */
+  color: white; /* White text */
+}
+
+/* Media query for responsive design (adjust breakpoints as needed) */
+@media only screen and (max-width: 768px) {
+  .banner__text span {
+    margin-right: 1rem; /* Reduce spacing on smaller screens */
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Base styles */
+.logoz {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+}
+
+.logos-slide {
+  white-space: nowrap;
+  animation: slide 5s linear infinite; /* Adjust timing as needed */
+}
+
+.logos-slide img {
+  height: 80px;
+  margin: 0 20px; /* Adjust margin as needed */
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .logos-slide img {
+    height: 60px; /* Decrease the height for smaller screens */
+    margin: 0 10px; /* Adjust margin as needed */
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .logoz {
+    padding: 40px 0; /* Decrease padding for smaller screens */
+  }
+
+  .logos-slide img {
+    height: 50px; /* Decrease the height further for smaller screens */
+    margin: 0 5px; /* Adjust margin as needed */
+  }
+}
+
+.contact-left iframe {
+  width: 450px;
+  height: 450px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.block {
+  flex: 1; /* Blocks take up equal width */
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+.rowzay {
+  width: 80%;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  overflow-x: hidden;
+  padding: 1rem 0;
+}
+
+.rowzay .imgWrapper {
+  width: 100%;
+  height: auto;  /* Adjust height as needed */
+  overflow: hidden;
+  margin: 0 auto;  /* Center image on mobile */
+}
+
+.rowzay .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.rowzay .imgWrapper:hover img {
+  transform: scale(1.25);
+}
+
+.rowzay .contentWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.rowzay .contentWrapper span.textWrapper {
+  display: block;
+  font-size: 20px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.rowzay .contentWrapper span.textWrapper span {
+  display: inline-block;
+  background: #383f47;
+  width: 70px;
+  height: 5px;
+}
+
+.rowzay .contentWrapper h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #383f47;
+  padding-bottom: 20px;
+}
+
+.rowzay .contentWrapper p {
+  font-size: 16px;
+  line-height: 25px;
+  padding-bottom: 25px;
+}
+
+@media (max-width: 991px) {
+  .rowzay {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+
+  .rowzay .contentWrapper {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .rowzay {
+    width: 90%;
+  }
+
+  .rowzay .contentWrapper h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+
+  .rowzay .contentWrapper p {
+    line-height: 24px;
+  }
+}
+
+
+@media (max-width:575px){
+
+  .rowzay .contentWrapper {
+    display: flex;  /* Use flexbox for mobile */
+    justify-content: center;  /* Center button horizontally */
+    align-items: center;  /* Center button vertically (optional) */
+    padding-left: 0;  /* Remove left padding on mobile */
+  }
+  
+
+  .rowzay .contentWrapper a {
+    font-size: 15px;
+    padding: 15px 40px;
+  }
+  .rowzay .contentWrapper h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .rowzay .contentWrapper p {
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .rowzay .contentWrapper a{
+    font-size: 15px;
+    padding: 15px 40px;
+    align-items: center;
+  }
+}
+
+hr{
+  margin:60px;
+}
