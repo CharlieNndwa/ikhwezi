@@ -66,7 +66,7 @@
     <!--Start Header	-->
     <header>
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light shadow">
           <div class="container-fluid">
             <a class="logos" href="/">
               <img src="images/logo -ikhwezi.png" alt="" />
@@ -83,39 +83,38 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a
-                        class="nav-link active"
-                        aria-current="page"
-                        href="/"
-                        >Home</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/about.html">About</a>
-                    </li>
-    
-                    <li class="nav-item">
-                      <a class="nav-link" href="/adult_section.html">Adult Section</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/children_section.html"
-                        >Children Section</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/Daycare.html">DAYCARE</a>
-                    </li>
-    
-                     <li class="nav-item">
-                      <a class="nav-link" href="/gallery.html">GALLERY</a>
-                    </li>
-    
-                    <li class="nav-item">
-                      <a class="nav-link" href="/contact-us.html">Contact Us</a>
-                    </li>
-                  </ul>
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/adult_section.html"
+                    >Adult Section</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/children_section.html"
+                    >Children Section</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Daycare.html">DAYCARE</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/gallery.html">GALLERY</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact-us.html">Contact Us</a>
+                </li>
+              </ul>
             </div>
           </div>
         </nav>
@@ -130,12 +129,28 @@
             <h2 class="section-title text-center heading">
               Get in touch with us:
             </h2>
-            <p class="text-center">Feel free to contact us and enquire about the organization.</p>
+            <p class="text-center lead">
+              Feel free to contact us or send an enquiry below:.
+            </p>
+
+            <div class="contact-info contact-section">
+              <span class="info-item d-flex align-items-center">
+                <span class="material-icons mr-2">phone</span> (016) 013-0065
+              </span>
+              <span class="info-item d-flex align-items-center">
+                <span class="material-icons mr-2">email</span>
+                info@ikhwezilokusacentre.co.za / ikhwezihome@webmail.co.za
+              </span>
+              <span class="info-item d-flex align-items-center">
+                <span class="material-icons mr-2">access_time</span> Visiting
+                Hours: Mon-Fri 2pm-4pm •• Sat-Sun 10am-3pm
+              </span>
+            </div>
           </div>
           <div class="container border mt-3 bg-light">
             <div class="row">
               <div class="col-md-6 p-5 bg-primary text-white">
-                <div class="map-container">
+                <div class="map-container blockzz">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3569.7612007433677!2d27.929897076328118!3d-26.52780357723318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e94ff78c5bd7131%3A0x7138de7e9a053150!2sMalherbe%20Rd%2C%20The%20De%20Deur%20Estates%2C%201884!5e0!3m2!1sen!2sza!4v1716122126871!5m2!1sen!2sza"
                     width="500"
@@ -176,7 +191,9 @@
                     class="form-control"
                   ></textarea>
                 </div>
-                <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+                <button class="btn btn-primary" onclick="sendMail()">
+                  Submit
+                </button>
               </div>
             </div>
           </div>

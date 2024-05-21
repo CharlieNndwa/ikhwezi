@@ -527,25 +527,31 @@ ul.footer-menu li a {
   margin: 0 20px; /* Adjust margin as needed */
 }
 
-/* Media queries for responsiveness */
+/* Media queries for responsiveness (unchanged desktop styles) */
+
 @media only screen and (max-width: 768px) {
+  .logoz {
+    flex-direction: column; /* Stack logos vertically on mobile */
+    align-items: center; /* Center logos horizontally */
+  }
+
   .logos-slide img {
-    height: 60px; /* Decrease the height for smaller screens */
-    margin: 0 10px; /* Adjust margin as needed */
+    width: 100%; /* Ensure equal width for all logos */
+    margin: 10px 0; /* Adjust spacing between logos */
   }
 }
 
 @media only screen and (max-width: 576px) {
+  /* Adjust padding for smaller screens (existing code) */
   .logoz {
-    padding: 40px 0; /* Decrease padding for smaller screens */
+    padding: 40px 0;
   }
 
+  /* Adjust image height for smaller screens (existing code) */
   .logos-slide img {
-    height: 50px; /* Decrease the height further for smaller screens */
-    margin: 0 5px; /* Adjust margin as needed */
+    height: 50px;
   }
 }
-
 .contact-left iframe {
   width: 450px;
   height: 450px;
@@ -575,9 +581,9 @@ ul.footer-menu li a {
 
 .rowzay .imgWrapper {
   width: 100%;
-  height: auto;  /* Adjust height as needed */
+  height: auto; /* Adjust height as needed */
   overflow: hidden;
-  margin: 0 auto;  /* Center image on mobile */
+  margin: 0 auto; /* Center image on mobile */
 }
 
 .rowzay .imgWrapper img {
@@ -656,16 +662,13 @@ ul.footer-menu li a {
   }
 }
 
-
-@media (max-width:575px){
-
+@media (max-width: 575px) {
   .rowzay .contentWrapper {
-    display: flex;  /* Use flexbox for mobile */
-    justify-content: center;  /* Center button horizontally */
-    align-items: center;  /* Center button vertically (optional) */
-    padding-left: 0;  /* Remove left padding on mobile */
+    display: flex; /* Use flexbox for mobile */
+    justify-content: center; /* Center button horizontally */
+    align-items: center; /* Center button vertically (optional) */
+    padding-left: 0; /* Remove left padding on mobile */
   }
-  
 
   .rowzay .contentWrapper a {
     font-size: 15px;
@@ -682,15 +685,15 @@ ul.footer-menu li a {
     text-align: center;
   }
 
-  .rowzay .contentWrapper a{
+  .rowzay .contentWrapper a {
     font-size: 15px;
     padding: 15px 40px;
     align-items: center;
   }
 }
 
-hr{
-  margin:60px;
+hr {
+  margin: 60px;
 }
 .pdf-viewer {
   width: 100%; /* Set width to 100% for responsiveness */
@@ -764,7 +767,7 @@ hr{
 }
 
 .info-item .material-icons {
- color: #008080;
+  color: #008080;
 }
 
 .contact-info {
@@ -799,7 +802,6 @@ hr{
   background-image: linear-gradient(80deg, #dbdada, #ffffffeb);
 }
 
-
 /**********************************************************
   Slider Container Start
 **********************************************************/
@@ -810,31 +812,29 @@ hr{
   overflow: hidden;
   box-shadow: 30px 40px 40px #00000063;
   /* border: 2rem solid rgba(255, 255, 255, 0.196); */
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   cursor: pointer;
   position: relative;
 }
-
 
 .slider-container h1 {
   white-space: nowrap;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  letter-spacing: .5rem;
+  letter-spacing: 0.5rem;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13rem;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(255, 255, 255, 0);
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  transition: all .2s linear;
+  transition: all 0.2s linear;
   animation: scroll 8s linear infinite;
 }
 
-
-@media (hover:hover) {
-  .slider-container:hover>h1 {
+@media (hover: hover) {
+  .slider-container:hover > h1 {
     -webkit-text-stroke-color: rgb(255, 255, 255);
     -webkit-text-fill-color: rgba(255, 255, 255, 0.103);
   }
@@ -848,9 +848,7 @@ hr{
   to {
     left: -150%;
   }
-
 }
-
 
 /**********************************************************
    Images Container Start
@@ -860,9 +858,8 @@ hr{
   height: 100%;
   display: flex;
   animation: slide var(--animation-duration) linear infinite;
-  transition: all .4s linear;
+  transition: all 0.4s linear;
 }
-
 
 @keyframes slide {
   0% {
@@ -875,7 +872,6 @@ hr{
 
   18% {
     margin-left: -100%;
-
   }
 
   33% {
@@ -884,7 +880,6 @@ hr{
 
   36% {
     margin-left: -200%;
-
   }
 
   51% {
@@ -893,23 +888,19 @@ hr{
 
   54% {
     margin-left: -300%;
-
   }
 
   69% {
     margin-left: -300%;
-
   }
 
   72% {
     margin-left: -400%;
-
   }
 
   87% {
     margin-left: -400%;
   }
-
 
   90% {
     margin-left: -500%;
@@ -917,16 +908,13 @@ hr{
 
   100% {
     margin-left: -500%;
-
   }
 }
-
 
 .images-container img {
   width: calc(100% / var(--numberOfImgs));
   height: 100%;
 }
-
 
 /**********************************************************
    Indicators Start
@@ -944,10 +932,9 @@ hr{
   border-radius: var(--indicator-radius);
   border: 2px solid var(--indicator-active-color);
   cursor: pointer;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
   animation: active var(--animation-duration) linear infinite;
 }
-
 
 /**********************************************************
    Keyframes for Indicator-1
@@ -973,14 +960,12 @@ hr{
     background-color: var(--indicator-color);
     width: var(--indicator-width);
     border-radius: var(--indicator-radius);
-
   }
 
   90% {
     background-color: var(--indicator-color);
     width: var(--indicator-width);
     border-radius: var(--indicator-radius);
-
   }
 
   91% {
@@ -993,11 +978,8 @@ hr{
     background-color: var(--indicator-active-color);
     width: var(--indicator-active-width);
     border-radius: var(--indicator-active-radius);
-
   }
-
 }
-
 
 /**********************************************************
    Keyframes for Indicator-2
@@ -1005,7 +987,6 @@ hr{
 .indicator-2 {
   animation: indi2 var(--animation-duration) linear infinite;
 }
-
 
 @keyframes indi2 {
   0% {
@@ -1045,14 +1026,12 @@ hr{
   }
 }
 
-
 /**********************************************************
    Keyframes for Indicator-3
 **********************************************************/
 .indicator-3 {
   animation: indi3 var(--animation-duration) linear infinite;
 }
-
 
 @keyframes indi3 {
   0% {
@@ -1071,7 +1050,6 @@ hr{
     background-color: var(--indicator-active-color);
     width: var(--indicator-active-width);
     border-radius: var(--indicator-active-radius);
-
   }
 
   51% {
@@ -1093,14 +1071,12 @@ hr{
   }
 }
 
-
 /**********************************************************
    Keyframes for Indicator-4
 **********************************************************/
 .indicator-4 {
   animation: indi4 var(--animation-duration) linear infinite;
 }
-
 
 @keyframes indi4 {
   0% {
@@ -1109,12 +1085,10 @@ hr{
     border-radius: var(--indicator-radius);
   }
 
-
   51% {
     background-color: var(--indicator-color);
     width: var(--indicator-width);
     border-radius: var(--indicator-radius);
-
   }
 
   54% {
@@ -1133,9 +1107,7 @@ hr{
     background-color: var(--indicator-color);
     width: var(--indicator-width);
     border-radius: var(--indicator-radius);
-
   }
-
 
   100% {
     background-color: var(--indicator-color);
@@ -1150,7 +1122,6 @@ hr{
 .indicator-5 {
   animation: indi5 var(--animation-duration) linear infinite;
 }
-
 
 @keyframes indi5 {
   0% {
@@ -1169,14 +1140,12 @@ hr{
     background-color: var(--indicator-active-color);
     width: var(--indicator-active-width);
     border-radius: var(--indicator-active-radius);
-
   }
 
   87% {
     background-color: var(--indicator-active-color);
     width: var(--indicator-active-width);
     border-radius: var(--indicator-active-radius);
-
   }
 
   90% {
@@ -1196,19 +1165,14 @@ hr{
   Reset Default Properties Start
 **********************************************************/
 
-
-
 /**********************************************************
   Reset Default Properties End
 **********************************************************/
-
-
 
 /**********************************************************
   Variables Start
 **********************************************************/
 :root {
-
   --black: #000;
   --white: #fff;
 
@@ -1244,8 +1208,6 @@ hr{
   overflow: hidden;
   padding: 50px;
 }
-
-
 
 .skahftin {
   width: 100%;
@@ -1482,7 +1444,6 @@ hr{
   }
 }
 
-
 .footer-area {
   margin-top: 100px;
   padding: 50px;
@@ -1491,66 +1452,64 @@ hr{
   background: -webkit-linear-gradient(left, #2749c4 0%, #6085b2 ); */
 }
 
-
-.main{
+.main {
   width: 1200px;
   margin: 0 auto;
 }
 
-.footerz{
+.footerz {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   flex-direction: row;
-
 }
 
-.single-footer{
+.single-footer {
   width: 250px;
 }
 
-.single-footer ul li{
+.single-footer ul li {
   margin-bottom: 10px;
   position: relative;
   padding-left: 20px;
 }
 
-.copies p{
+.copies p {
   text-align: center;
   text-transform: capitalize;
   margin-top: 50px;
   color: #fff;
 }
 
-.single-footer ul li a{
+.single-footer ul li a {
   text-decoration: none;
   color: #fff;
 }
 
-.single-footer ul li a:hover{
+.single-footer ul li a:hover {
   text-decoration: none;
   color: #e9e622;
   margin-left: 10px;
-  transition: .4s ease-in;
+  transition: 0.4s ease-in;
 }
 
-.single-footer ul li a i{
+.single-footer ul li a i {
   position: absolute;
   left: 0;
   top: 5px;
 }
 
-.single-footer p{
+.single-footer p {
   color: #fff;
 }
 
-.single-footer h4{
+.single-footer h4 {
   text-transform: capitalize;
   font-size: 22px;
   margin-bottom: 20px;
 }
 
-.footer-social a{
+.footer-social a {
   color: #fff;
   border: 1px solid #6085b2;
   width: 40px;
@@ -1563,13 +1522,13 @@ hr{
 }
 
 @media only screen and (max-width: 600px) {
-    .main{ 
-      width: 320px;
-    }
-    .single-footer{
-      width: 100%;
-      margin-bottom: 30px;
-    }
+  .main {
+    width: 320px;
+  }
+  .single-footer {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .map-container {
@@ -1580,4 +1539,133 @@ hr{
   .map-container iframe {
     width: 100%; /* Set width to 100% for mobile screens */
   }
+}
+
+.logos-slide {
+  display: flex; /* Make logos-slide a flexbox container */
+  flex-wrap: wrap; /* Allow items to wrap on mobile */
+  justify-content: space-between; /* Space logos evenly */
+}
+
+@media (max-width: 768px) {
+  .logos-slide img {
+    width: 30%; /* Adjust width as needed for mobile */
+  }
+}
+
+/* Existing styles for btn and btn-primary (assuming Bootstrap) */
+
+@media only screen and (max-width: 768px) {
+  .center-mobile {
+    display: block; /* Make each button a block element */
+    margin: 10px auto; /* Center buttons horizontally with 10px margin */
+    text-align: center; /* Center button text */
+  }
+}
+
+.accordion {
+  margin: 60px auto;
+  width: 600px;
+}
+
+.accordion li {
+  list-style: none;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #e3edf7;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.accordion li label{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+label::before{
+  content: '+';
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+.accordion .corent{
+  color: #555;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .corent{
+  max-height: 400px;
+  padding: 10px 10px 20px;
+}
+
+/* Existing styles for accordion */
+
+@media only screen and (max-width: 768px) {
+  .accordion-mobile {
+    margin: 20px auto; /* Adjust margin for mobile */
+    width: 90%; /* Adjust width for mobile */
+  }
+
+  .accordion-mobile li {
+    margin: 10px; /* Adjust margin for mobile */
+  }
+}
+
+
+.navbar.shadow {  /* More specific selector */
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+/* Existing styles (assuming Bootstrap) */
+
+.contact-section {
+  text-align: center; /* Center entire contact section */
+}
+
+.contact-section h2 {
+  margin-bottom: 20px; /* Add space after heading */
+}
+
+.contact-info {
+  display: flex; /* Make contact info items a row */
+  flex-wrap: wrap; /* Wrap items on mobile screens */
+  justify-content: center; /* Center items horizontally */
+  margin: 0 auto; /* Center the row horizontally */
+}
+
+.info-item {
+  margin: 10px; /* Add spacing between contact info items */
+  text-align: left; /* Align text left within each item */
+}
+
+.blockzz {
+  flex: 1; /* Blocks take up equal width */
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #086b63;
+  border-radius: 5px;
+  background-color: hsl(219, 76%, 47%);
+  text-align: center;
+}
+
+.my-teal-element {
+
+  /* or */
+  color: #009688;
 }
