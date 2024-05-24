@@ -262,8 +262,6 @@ section.team-section {
   padding: 100px 0px;
 }
 
-.team-box {
-}
 
 .team-info {
   text-align: center;
@@ -1192,7 +1190,7 @@ hr {
   DONATE              
 -----------------------------------------*/
 .donate-section {
-  background-image: url("/images/ed3d3a74d77644262132e77dfe81819f.jpg");
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1668,4 +1666,87 @@ input[type="radio"]{
 
   /* or */
   color: #009688;
+}
+
+.info-itemz .material-icons {
+  color: #c09110;
+}
+
+.info-itemz {
+  margin-bottom: 5px; /* Add some spacing between items */
+}
+
+.banner-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-container .banzer{
+  background: linear-gradient(-55deg, #ff7675 29%, #d63031 29.1%, #ff7675 68.1%);
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 5px 10px #0005;
+  overflow: hidden;
+}
+
+.banner-container .banzer .giving{
+  flex: 1 1 250px;
+  padding: 15px;
+  text-align: center;
+}
+
+.banner-container .banzer .giving{
+  width: 80%;
+}
+
+.banner-container .banzer .conzent{
+  flex: 1 1 250px;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.banner-container .banzer .conzent h3{
+  color: #fff;
+  font-size: 40px;
+}
+
+.banner-container .banzer .conzent p{
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.banner-container .banzer .disab{
+  position: relative;
+  bottom: -33px;
+  padding: 10px;
+  flex: 1 1 250px;
+}
+
+.banner-container .banzer .disab img{
+  width: 100%;
+}
+
+@media  (max-width: 768px) {
+  .banner-container .banzer .disab{
+    display: none;
+  }
+}
+
+.about-mediaz {
+  border: 10px ;
+  width: 300px;
+  height: 390px;
+}
+
+
+
+.download-btn .material-icons {
+  margin-left: 5px; /* Add a slight margin for spacing */
 }
