@@ -52,15 +52,28 @@ section,
   font-weight: 500;
 }
 
+/* Ensure the navbar container doesn't wrap */
+.navbar {
+  flex-wrap: nowrap;
+}
+
 .logos {
   display: flex;
-  align-items: center; /* Center logo vertically within navbar */
+  align-items: center;
+  flex-shrink: 0; /* Prevents the logo from shrinking */
 }
 
 .logos img {
-  width: auto; /* Allow logo to scale based on content */
-  height: 50px; /* Set a fixed height for the logo */
-  margin: 0 1rem; /* Adjust margins as needed */
+  width: auto;
+  height: 99px; /* Large, but leaves room for nav items */
+  object-fit: contain;
+  margin-right: 1rem;
+}
+
+@media (max-width: 991px) {
+  .logos img {
+    height: 60px; /* Logo stays smaller on mobile to keep menu items visible */
+  }
 }
 
 /*Header*/
@@ -3325,3 +3338,4 @@ header {
     align-items: center;
     gap: 15px;
 }
+

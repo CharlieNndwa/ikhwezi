@@ -60,7 +60,7 @@
         <nav class="navbar navbar-expand-lg navbar-light shadow">
           <div class="container-fluid">
             <a class="logos" href="/">
-              <img src="images/logo -ikhwezi.png" alt="" />
+              <img src="images/IKHWEZI.png" alt="" />
             </a>
             <button
               class="navbar-toggler"
@@ -76,9 +76,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="/"
-                    >Home</a
-                  >
+                  <a class="nav-link" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/about.html">About</a>
@@ -160,7 +158,7 @@
                   <div class="bank-item">
                     <span class="material-icons">savings</span>
                     <small>Account Name</small>
-                    <strong>IKHWEZILOKUSA PSYCHIATRIC HOME</strong>
+                    <strong>IKHWEZILOKUSA HOME</strong>
                   </div>
                   <div class="bank-item">
                     <span class="material-icons">credit_card</span>
@@ -221,11 +219,11 @@
         <div class="main">
           <div class="footerz">
             <div class="single-footer">
-              <h4>Ikhwezilokusa Psychiatric Home</h4>
+              <h4>Ikhwezilokusa Home</h4>
 
               <div class="single-footer">
-                <a class="logos" href="/">
-                  <img src="images/logo -ikhwezi.png" alt="" />
+                <a class="footer-brand-logo" href="/">
+                  <img src="images/IKHWEZI.png" alt="Ikhwezilokusa Logo" />
                 </a>
               </div>
               <div class="footer-social py-2">
@@ -270,7 +268,7 @@
                 </li>
                 <li>
                   <a href="#"
-                    ><i class="fa-solid fa-square-phone"></i> +016 013 0065
+                    ><i class="fa-solid fa-square-phone"></i> 016 013 0065
                   </a>
                 </li>
                 <li>
@@ -295,7 +293,7 @@
           </div>
 
           <div class="copies">
-            <p>&copy; 2024 Ikhwezilokusa | All Rights Reserved.</p>
+            <p>&copy; 2026 Ikhwezilokusa | All Rights Reserved.</p>
           </div>
         </div>
       </footer>
@@ -313,21 +311,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
 
     <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    // Get the current page path
-    const path = window.location.pathname;
-    const page = path.split("/").pop() || "/"; 
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the current page path
+        const path = window.location.pathname;
+        const page = path.split("/").pop() || "/";
 
-    // Find all links in the navbar
-    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        // Find all links in the navbar
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
-    navLinks.forEach(link => {
-      // Check if the link href matches the current page
-      if (link.getAttribute('href') === path || link.getAttribute('href') === page) {
-        link.classList.add('active');
-      }
-    });
-  });
-</script>
+        navLinks.forEach((link) => {
+          // Check if the link href matches the current page
+          if (
+            link.getAttribute("href") === path ||
+            link.getAttribute("href") === page
+          ) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
