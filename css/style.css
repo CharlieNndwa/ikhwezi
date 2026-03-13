@@ -3382,3 +3382,41 @@ header {
 .toastify.toastify-top {
     top: 100px !important; /* This pushes the toast down 100px from the top */
 }
+
+.btn-download-white {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 8px 20px; /* Reduced padding to minimize size */
+    background-color: #ffffff;
+    color: #008080; /* Teal text to match your theme */
+    border: 2px solid #008080;
+    border-radius: 30px; /* Sleek pill shape */
+    font-weight: 600;
+    font-size: 14px; /* Smaller font for a more refined look */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn-download-white:hover {
+    background-color: #008080;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.download-icon-img {
+    width: 18px; /* Specifically sizes your uploaded image */
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Ensure the text and icon stay on one line on your HP laptop screen */
+@media (max-width: 480px) {
+    .btn-download-white {
+        padding: 6px 15px;
+        font-size: 13px;
+    }
+}
