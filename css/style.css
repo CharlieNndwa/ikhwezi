@@ -3339,3 +3339,9 @@ header {
     gap: 15px;
 }
 
+/* Adjust Toastify position to sit below your absolute header */
+.toastify {
+    top: 100px !important; /* Adjust based on your header height */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+    font-family: 'Open Sans', sans-serif !important;
+}
